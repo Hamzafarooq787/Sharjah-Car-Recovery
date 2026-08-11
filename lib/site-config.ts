@@ -14,6 +14,7 @@ export const siteConfig = {
 export interface ServiceInfo {
   slug: string
   title: string
+  titleAr: string
   shortDescription: string
   metaTitle: string
   metaDescription: string
@@ -24,6 +25,7 @@ export const services: ServiceInfo[] = [
   {
     slug: "car-recovery",
     title: "Car Recovery",
+    titleAr: "إنقاذ السيارات",
     shortDescription: "Fast, careful car recovery anywhere in Sharjah, day or night.",
     metaTitle: "Car Recovery Sharjah | 24/7 Car Recovery Service Near Me",
     metaDescription:
@@ -33,6 +35,7 @@ export const services: ServiceInfo[] = [
   {
     slug: "towing-service",
     title: "Towing Service",
+    titleAr: "سحب السيارات",
     shortDescription: "Reliable car towing service for sedans, SUVs and light vehicles.",
     metaTitle: "Car Towing Service Sharjah | Tow Truck Near Me 24/7",
     metaDescription:
@@ -42,6 +45,7 @@ export const services: ServiceInfo[] = [
   {
     slug: "roadside-assistance",
     title: "Roadside Assistance",
+    titleAr: "المساعدة على الطريق",
     shortDescription: "On-the-spot help for flat tyres, fuel delivery and minor faults.",
     metaTitle: "Roadside Assistance Sharjah | 24 Hour Emergency Help",
     metaDescription:
@@ -51,23 +55,27 @@ export const services: ServiceInfo[] = [
   {
     slug: "breakdown-recovery",
     title: "Breakdown Recovery",
+    titleAr: "سحب حالات الأعطال",
     shortDescription: "Emergency breakdown recovery for cars that won't start or move.",
     metaTitle: "Breakdown Recovery Sharjah | Emergency Car Recovery Near Me",
     metaDescription:
       "Vehicle broken down? Our emergency breakdown recovery Sharjah team responds fast, any time of day, to get your car off the road safely.",
-    image: "/images/breakdown-recovery-night.webp",
+    image: "/images/roadside-fuel-closeup.webp",
   },
   {
     slug: "jumpstart",
     title: "Jumpstart",
+    titleAr: "شحن البطارية",
     shortDescription: "Quick battery jumpstarts to get you back on the road in minutes.",
     metaTitle: "Car Jumpstart Sharjah | Flat Battery Assistance Near Me",
     metaDescription:
       "Flat battery? Our mobile jumpstart service reaches you fast anywhere in Sharjah, with cheap car recovery Sharjah rates and no waiting around.",
+    image: "/images/jumpstart-battery-service.webp",
   },
   {
     slug: "flatbed-recovery",
     title: "Flatbed Recovery",
+    titleAr: "سطحة نقل السيارات",
     shortDescription: "Flatbed towing for accident recovery, luxury and low-clearance cars.",
     metaTitle: "Flatbed Recovery Sharjah | Flatbed Towing Service Near Me",
     metaDescription:

@@ -1,16 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Truck, Car, LifeBuoy, Wrench, Zap, TowerControl } from "lucide-react"
-import { services as serviceConfig, siteConfig } from "@/lib/site-config"
-
-const serviceIcons = {
-  "car-recovery": Car,
-  "towing-service": Truck,
-  "roadside-assistance": LifeBuoy,
-  "breakdown-recovery": Wrench,
-  jumpstart: Zap,
-  "flatbed-recovery": TowerControl,
-} as const
+import { siteConfig, services as serviceConfig } from "@/lib/site-config"
 
 const services = [
   {
@@ -40,45 +30,55 @@ export default function RecoveryFeatures() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {services.map((service) => {
             const info = serviceConfig.find((s) => s.slug === service.slug)!
-            const Icon = serviceIcons[service.slug as keyof typeof serviceIcons]
             return (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className={`${service.large ? "lg:col-span-2" : ""} group relative overflow-hidden rounded-xl bg-navy-accent border border-white/5 hover:border-primary/40 transition-colors ${
-                  service.large ? "aspect-[16/9] md:aspect-auto min-h-[220px]" : "aspect-square"
+                className={`${service.large ? "lg:col-span-2" : ""} group relative overflow-hidden rounded-xl bg-navy-accent border border-white/10 hover:border-primary/50 transition-colors ${
+                  service.large ? "aspect-[16/9] md:aspect-auto min-h-[240px]" : "aspect-square"
                 }`}
               >
                 {info.image && (
-                  <>
-                    <Image
-                      src={info.image}
-                      alt={info.title}
-                      fill
-                      loading="lazy"
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                      sizes={
-                        service.large
-                          ? "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                          : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      }
-                    />
-                    <div className="absolute inset-0 bg-background-dark/55 group-hover:bg-background-dark/45 transition-colors" />
-                  </>
-                )}
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-6">
-                  <Icon
-                    className="w-10 h-10 md:w-12 md:h-12 text-primary group-hover:scale-110 transition-transform drop-shadow-lg"
-                    strokeWidth={1.75}
+                  <Image
+                    src={info.image}
+                    alt={info.title}
+                    fill
+                    loading="lazy"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes={
+                      service.large
+                        ? "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                        : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    }
                   />
-                  <div className="text-center">
-                    <h3 className="text-lg md:text-xl font-black text-white group-hover:text-primary transition-colors">
-                      {info.title}
-                    </h3>
-                    {service.description && (
-                      <p className="text-slate-400 text-sm mt-2 max-w-xs mx-auto">{service.description}</p>
-                    )}
-                  </div>
+                )}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "linear-gradient(0deg, rgba(10,12,18,0.95) 0%, rgba(10,12,18,0.55) 45%, rgba(10,12,18,0.05) 75%)",
+                  }}
+                />
+                <div className={`absolute bottom-0 left-0 right-0 ${service.large ? "p-7 md:p-8" : "p-5"}`}>
+                  <h3
+                    className={`${
+                      service.large ? "text-2xl md:text-3xl" : "text-lg md:text-xl"
+                    } font-black text-white leading-tight group-hover:text-primary transition-colors`}
+                  >
+                    {info.title}
+                  </h3>
+                  <p
+                    dir="rtl"
+                    lang="ar"
+                    className={`${
+                      service.large ? "text-lg md:text-xl" : "text-sm md:text-base"
+                    } font-bold text-primary`}
+                  >
+                    {info.titleAr}
+                  </p>
+                  {service.description && (
+                    <p className="text-slate-300 text-sm mt-2 max-w-sm">{service.description}</p>
+                  )}
                 </div>
               </Link>
             )
@@ -87,6 +87,15 @@ export default function RecoveryFeatures() {
       </section>
 
       <section className="w-full py-24 relative overflow-hidden flex items-center justify-center text-center px-6 bg-navy-accent">
+        <Image
+          src="/images/flatbed-recovery-handover.webp"
+          alt="Sharjah Car Recovery professional operations"
+          fill
+          loading="lazy"
+          className="object-cover opacity-25"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-background-dark/70" />
         <div className="relative z-10 max-w-3xl space-y-8">
           <h2 className="text-4xl md:text-5xl font-black text-white">Trust In Professional Operations</h2>
           <p className="text-xl text-slate-300 leading-relaxed">

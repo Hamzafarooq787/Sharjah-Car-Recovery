@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   description:
     "24 hour car recovery Sharjah. Fast towing, breakdown recovery, roadside assistance and flatbed recovery across Sharjah. Call 0545430884 now.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/sharjah-car-recovery-site-icon.webp",
+    apple: "/images/sharjah-car-recovery-site-icon.webp",
+  },
   openGraph: {
     type: "website",
     locale: "en_AE",
@@ -35,12 +39,21 @@ export const metadata: Metadata = {
     title: "Sharjah Car Recovery | 24/7 Car Recovery & Towing Sharjah",
     description:
       "24 hour car recovery Sharjah. Fast towing, breakdown recovery, roadside assistance and flatbed recovery across Sharjah. Call 0545430884 now.",
+    images: [
+      {
+        url: "/images/sharjah-car-recovery-open-graph.webp",
+        width: 867,
+        height: 454,
+        alt: "Sharjah Car Recovery - 24/7 Recovery & Towing",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sharjah Car Recovery | 24/7 Car Recovery & Towing Sharjah",
     description:
       "24 hour car recovery Sharjah. Fast towing, breakdown recovery, roadside assistance and flatbed recovery across Sharjah.",
+    images: ["/images/sharjah-car-recovery-open-graph.webp"],
   },
 }
 

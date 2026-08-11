@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { Phone, MapPin } from "lucide-react"
+import ArabicTagline from "@/components/ArabicTagline"
 import { areas, siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
@@ -30,6 +32,18 @@ export default function AreasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main>
         <section className="relative w-full py-24 flex items-center justify-center overflow-hidden border-b border-white/5 bg-navy-accent">
+          <Image
+            src="/images/car-recovery-loading.webp"
+            alt="Sharjah Car Recovery coverage across Sharjah"
+            fill
+            priority
+            className="object-cover opacity-40"
+            sizes="100vw"
+          />
+          <div
+            className="absolute inset-0 z-[1]"
+            style={{ background: "linear-gradient(to bottom, rgba(10,12,18,0.6) 0%, rgba(10,12,18,0.9) 100%)" }}
+          />
           <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
               <MapPin className="w-3.5 h-3.5" />
@@ -38,6 +52,7 @@ export default function AreasPage() {
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">
               Car Recovery Near Me — <span className="text-primary">All of Sharjah</span>
             </h1>
+            <ArabicTagline text="سحب السيارات في الشارقة | إنقاذ السيارات في الشارقة" className="mb-4" />
             <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-medium">
               Wherever you are in Sharjah, our car recovery, towing and roadside assistance team is close by, 24
               hours a day, 7 days a week.

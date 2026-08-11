@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { LifeBuoy } from "lucide-react"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
 
@@ -54,8 +53,9 @@ export default function RoadsideAssistancePage() {
         title="Roadside"
         titleHighlight="Assistance"
         intro="Flat tyre, running out of fuel, or a minor fault that won't let you drive on? Our roadside assistance Sharjah team reaches you fast, wherever you are."
-        icon={LifeBuoy}
         image={service.image}
+        titleAr={service.titleAr}
+        arabicTagline="قطر السيارات الشارقة"
         paragraphs={[
           "Not every problem needs a full tow. Our roadside assistance covers tyre changes, fuel delivery, minor diagnostics and quick fixes that get you moving again without leaving the roadside.",
           "We aim to be one of the fastest roadside assistance Sharjah services around, dispatching a technician the moment you call so you're not left waiting in the heat or the dark.",
