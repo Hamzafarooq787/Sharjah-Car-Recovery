@@ -55,6 +55,7 @@ export default function FlatbedRecoveryPage() {
         titleHighlight="Recovery"
         intro="For accident recovery and low-clearance vehicles, our flatbed recovery Sharjah service transports your car safely without any wheel contact with the road."
         icon={TowerControl}
+        image={service.image}
         paragraphs={[
           "Some vehicles need extra care in transit. Whether it's a car involved in an accident, a lowered sports car, or a vehicle with mechanical damage, our flatbed towing service Sharjah keeps every wheel off the ground.",
           "Our flatbed trucks are suited to accident recovery, car transport Sharjah relocations, and any job where a standard tow isn't the safest option.",
