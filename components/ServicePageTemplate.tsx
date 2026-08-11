@@ -202,18 +202,7 @@ export default function ServicePageTemplate({
               </a>
             </div>
             <div className="relative w-full md:w-1/2 h-80 md:h-[450px] flex items-center justify-center bg-background-dark/40 overflow-hidden">
-              {image ? (
-                <Image
-                  src={image}
-                  alt={`${title} ${titleHighlight} coverage across Sharjah`}
-                  fill
-                  loading="lazy"
-                  className="object-cover opacity-60"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              ) : (
-                <Icon className="w-20 h-20 text-primary/40" strokeWidth={1} />
-              )}
+              <Icon className="w-20 h-20 text-primary/40" strokeWidth={1} />
             </div>
           </div>
         </div>

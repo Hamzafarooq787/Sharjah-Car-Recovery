@@ -64,6 +64,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Car Jumpstart Sharjah | Flat Battery Assistance Near Me",
     metaDescription:
       "Flat battery? Our mobile jumpstart service reaches you fast anywhere in Sharjah, with cheap car recovery Sharjah rates and no waiting around.",
+    image: "/images/jumpstart-battery-service.webp",
   },
   {
     slug: "flatbed-recovery",
