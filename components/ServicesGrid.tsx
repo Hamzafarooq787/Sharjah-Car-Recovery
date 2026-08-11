@@ -1,15 +1,5 @@
-import { Car, Truck, LifeBuoy, Wrench, Zap, TowerControl } from "lucide-react"
 import ServiceCard from "./ServiceCard"
 import { services } from "@/lib/site-config"
-
-const serviceIcons = {
-  "car-recovery": Car,
-  "towing-service": Truck,
-  "roadside-assistance": LifeBuoy,
-  "breakdown-recovery": Wrench,
-  jumpstart: Zap,
-  "flatbed-recovery": TowerControl,
-} as const
 
 export default function ServicesGrid() {
   return (
@@ -19,8 +9,8 @@ export default function ServicesGrid() {
           <ServiceCard
             key={service.slug}
             title={service.title}
+            titleAr={service.titleAr}
             description={service.shortDescription}
-            icon={serviceIcons[service.slug as keyof typeof serviceIcons]}
             href={`/services/${service.slug}`}
             image={service.image}
           />

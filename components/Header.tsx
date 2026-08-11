@@ -55,9 +55,12 @@ export default function Header() {
                     <Link
                       key={service.slug}
                       href={`/services/${service.slug}`}
-                      className="block px-4 py-3 text-sm hover:bg-white/5 hover:text-primary transition-colors"
+                      className="flex items-center justify-between gap-3 px-4 py-3 text-sm hover:bg-white/5 hover:text-primary transition-colors"
                     >
-                      {service.title}
+                      <span>{service.title}</span>
+                      <span dir="rtl" lang="ar" className="text-slate-500 text-xs">
+                        {service.titleAr}
+                      </span>
                     </Link>
                   ))}
                 </div>
@@ -126,10 +129,13 @@ export default function Header() {
                       <Link
                         key={service.slug}
                         href={`/services/${service.slug}`}
-                        className="text-sm text-gray-300 hover:text-primary transition-colors py-2 block"
+                        className="flex items-center justify-between gap-3 text-sm text-gray-300 hover:text-primary transition-colors py-2"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        • {service.title}
+                        <span>• {service.title}</span>
+                        <span dir="rtl" lang="ar" className="text-gray-500 text-xs">
+                          {service.titleAr}
+                        </span>
                       </Link>
                     ))}
                   </div>

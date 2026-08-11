@@ -19,8 +19,14 @@ export default function Footer() {
           <ul className="space-y-2 text-slate-500 text-sm">
             {services.map((service) => (
               <li key={service.slug}>
-                <Link className="hover:text-primary" href={`/services/${service.slug}`}>
-                  {service.title}
+                <Link
+                  className="hover:text-primary flex items-center justify-between gap-3"
+                  href={`/services/${service.slug}`}
+                >
+                  <span>{service.title}</span>
+                  <span dir="rtl" lang="ar" className="text-slate-600 text-xs">
+                    {service.titleAr}
+                  </span>
                 </Link>
               </li>
             ))}
