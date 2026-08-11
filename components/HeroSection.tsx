@@ -1,4 +1,5 @@
-import { Phone, Truck } from "lucide-react"
+import Image from "next/image"
+import { Phone } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
 
 export default function HeroSection() {
@@ -40,22 +41,15 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 20%, rgba(245,180,0,0.25), transparent 40%), radial-gradient(circle at 80% 70%, rgba(245,180,0,0.15), transparent 45%)",
-          }}
+      <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent overflow-hidden">
+        <Image
+          src="/images/towing-service-sunset.webp"
+          alt="Sharjah Car Recovery tow truck loading a car at sunset"
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 50vw"
         />
-        <div className="relative z-10 flex flex-col items-center text-center gap-6 px-10">
-          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
-            <Truck className="w-14 h-14 md:w-16 md:h-16 text-primary" strokeWidth={1.5} />
-          </div>
-          <p className="text-slate-300 font-bold uppercase tracking-[0.2em] text-sm">
-            24/7 Emergency Recovery Fleet
-          </p>
-        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent lg:block hidden"></div>
       </div>
     </section>

@@ -1,9 +1,18 @@
+import Image from "next/image"
+
 export default function AboutProcess() {
   return (
     <>
       <section className="flex flex-col lg:flex-row w-full overflow-hidden bg-background-dark">
-        <div className="w-full lg:w-1/2 min-h-[350px] bg-navy-accent flex items-center justify-center">
-          <span className="material-symbols-outlined text-primary text-8xl">local_shipping</span>
+        <div className="w-full lg:w-1/2 min-h-[350px] relative bg-navy-accent overflow-hidden">
+          <Image
+            src="/images/roadside-assistance-fuel-delivery.webp"
+            alt="Sharjah Car Recovery roadside assistance in Sharjah"
+            fill
+            loading="lazy"
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-20 lg:px-24 py-24">
           <div className="space-y-8 max-w-xl">

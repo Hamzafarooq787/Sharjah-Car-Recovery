@@ -1,4 +1,5 @@
-import { Phone, ShieldCheck } from "lucide-react"
+import Image from "next/image"
+import { Phone } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
 
 export default function AboutHero() {
@@ -27,10 +28,15 @@ export default function AboutHero() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent flex items-center justify-center">
-        <div className="w-28 h-28 md:w-40 md:h-40 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center">
-          <ShieldCheck className="w-14 h-14 md:w-20 md:h-20 text-primary" strokeWidth={1.5} />
-        </div>
+      <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent overflow-hidden">
+        <Image
+          src="/images/flatbed-recovery-handover.webp"
+          alt="Sharjah Car Recovery technician assisting a customer"
+          fill
+          priority
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 50vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-transparent to-transparent lg:from-background-dark lg:to-transparent"></div>
       </div>
     </section>

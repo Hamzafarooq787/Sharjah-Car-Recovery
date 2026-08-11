@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { Phone, MapPin } from "lucide-react"
 import { areas, siteConfig } from "@/lib/site-config"
 
@@ -30,6 +31,18 @@ export default function AreasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main>
         <section className="relative w-full py-24 flex items-center justify-center overflow-hidden border-b border-white/5 bg-navy-accent">
+          <Image
+            src="/images/car-recovery-loading.webp"
+            alt="Sharjah Car Recovery coverage across Sharjah"
+            fill
+            priority
+            className="object-cover opacity-40"
+            sizes="100vw"
+          />
+          <div
+            className="absolute inset-0 z-[1]"
+            style={{ background: "linear-gradient(to bottom, rgba(10,12,18,0.6) 0%, rgba(10,12,18,0.9) 100%)" }}
+          />
           <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
               <MapPin className="w-3.5 h-3.5" />
