@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ArabicTagline from "./ArabicTagline"
 
 export default function ContactHero() {
   return (
@@ -26,6 +27,7 @@ export default function ContactHero() {
         <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.1] tracking-tight mb-4">
           Contact <span className="text-primary">Sharjah Car Recovery</span>
         </h1>
+        <ArabicTagline text="سحب سيارات بالقرب مني | إنقاذ سيارات بالقرب مني" className="mb-4" />
         <p className="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed">
           If you need car recovery or towing assistance, contact us any time. We&apos;re ready to dispatch help across
           Sharjah immediately.

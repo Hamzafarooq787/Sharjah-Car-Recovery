@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import { Phone } from "lucide-react"
 import Image from "next/image"
+import ArabicTagline from "./ArabicTagline"
 import { areas, siteConfig } from "@/lib/site-config"
 
 interface Feature {
@@ -17,6 +18,7 @@ interface ServicePageTemplateProps {
   paragraphs: string[]
   features: Feature[]
   image?: string
+  arabicTagline?: string
 }
 
 export default function ServicePageTemplate({
@@ -28,6 +30,7 @@ export default function ServicePageTemplate({
   paragraphs,
   features,
   image,
+  arabicTagline,
 }: ServicePageTemplateProps) {
   const coverageAreas = areas.slice(0, 4)
 
@@ -47,6 +50,7 @@ export default function ServicePageTemplate({
             <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.1] tracking-tight">
               {title} <span className="text-primary">{titleHighlight}</span>
             </h1>
+            {arabicTagline && <ArabicTagline text={arabicTagline} />}
             <p className="text-slate-400 text-lg max-w-lg leading-relaxed">{intro}</p>
             <div className="pt-4">
               <a

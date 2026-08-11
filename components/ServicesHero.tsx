@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ArabicTagline from "./ArabicTagline"
 
 export default function ServicesHero() {
   return (
@@ -17,6 +18,7 @@ export default function ServicesHero() {
       />
       <div className="relative z-10 text-center px-6">
         <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">Our Recovery Services</h1>
+        <ArabicTagline text="خدمة إنقاذ سيارات الشارقة | سحب سيارات بالقرب مني" className="mb-4" />
         <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-medium">
           24/7 car recovery and towing services across Sharjah, UAE.
         </p>

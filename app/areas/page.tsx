@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { Phone, MapPin } from "lucide-react"
+import ArabicTagline from "@/components/ArabicTagline"
 import { areas, siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function AreasPage() {
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">
               Car Recovery Near Me — <span className="text-primary">All of Sharjah</span>
             </h1>
+            <ArabicTagline text="سحب السيارات في الشارقة | إنقاذ السيارات في الشارقة" className="mb-4" />
             <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-medium">
               Wherever you are in Sharjah, our car recovery, towing and roadside assistance team is close by, 24
               hours a day, 7 days a week.

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Phone } from "lucide-react"
+import ArabicTagline from "./ArabicTagline"
 import { siteConfig } from "@/lib/site-config"
 
 export default function AboutHero() {
@@ -13,6 +14,7 @@ export default function AboutHero() {
           <h1 className="text-4xl md:text-6xl font-black text-[#f8f7f6] leading-[1.1] tracking-tight">
             About <span className="text-primary">Sharjah Car Recovery</span>
           </h1>
+          <ArabicTagline text="خدمة سحب سيارات الشارقة | خدمة إنقاذ سيارات الشارقة" />
           <p className="text-slate-400 text-xl max-w-lg leading-relaxed">
             Built on reliability and local knowledge, we are Sharjah&apos;s dependable choice for emergency roadside
             assistance and vehicle recovery.

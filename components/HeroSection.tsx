@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Phone } from "lucide-react"
+import ArabicTagline from "./ArabicTagline"
 import { siteConfig } from "@/lib/site-config"
 
 export default function HeroSection() {
@@ -20,6 +21,7 @@ export default function HeroSection() {
               in <span className="text-primary">Sharjah</span>
             </span>
           </h1>
+          <ArabicTagline text="سحب سيارات الشارقة | إنقاذ سيارات الشارقة | خدمة سحب سيارات الشارقة" />
           <p className="text-slate-400 text-base md:text-lg max-w-lg leading-relaxed pt-2 md:pt-0">
             Sharjah Car Recovery is your local, round-the-clock team for car recovery, towing, breakdown recovery
             and roadside assistance. Fast dispatch, honest pricing, every neighbourhood covered.
