@@ -5,10 +5,10 @@ export const siteConfig = {
   phoneIntlDisplay: "+971 54 543 0884",
   phoneTel: "+971545430884",
   whatsapp: "https://wa.me/971545430884",
-  email: "info@sharjahcarrecovery.ae",
+  email: "info@sharjahcarrecovery.com",
   city: "Sharjah",
   country: "United Arab Emirates",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://sharjahcarrecovery.ae",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://sharjahcarrecovery.com",
 }
 
 export interface ServiceInfo {
