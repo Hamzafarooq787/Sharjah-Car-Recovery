@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Wrench } from "lucide-react"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
 
@@ -54,7 +53,6 @@ export default function BreakdownRecoveryPage() {
         title="Breakdown"
         titleHighlight="Recovery"
         intro="Vehicle broken down and won't start? Our emergency breakdown recovery Sharjah team responds fast, day or night, to get you and your car somewhere safe."
-        icon={Wrench}
         image={service.image}
         titleAr={service.titleAr}
         arabicTagline="سحب سيارات طوارئ الشارقة | سحب سيارات 24 ساعة الشارقة | سطحة 24 ساعة الشارقة | ونش سحب سيارات 24 ساعة"

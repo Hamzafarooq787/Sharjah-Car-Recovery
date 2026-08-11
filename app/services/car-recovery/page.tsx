@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Car } from "lucide-react"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
 
@@ -49,7 +48,6 @@ export default function CarRecoveryPage() {
         title="Car Recovery"
         titleHighlight="Sharjah"
         intro="Need car recovery in Sharjah right now? Our team handles every recovery call with speed and care, getting your vehicle off the road and to wherever you need it."
-        icon={Car}
         image={service.image}
         titleAr={service.titleAr}
         arabicTagline="إنقاذ السيارات في الشارقة | إنقاذ سيارات بالقرب مني"

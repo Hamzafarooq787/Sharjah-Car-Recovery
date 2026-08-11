@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { TowerControl } from "lucide-react"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
 
@@ -54,7 +53,6 @@ export default function FlatbedRecoveryPage() {
         title="Flatbed"
         titleHighlight="Recovery"
         intro="For accident recovery and low-clearance vehicles, our flatbed recovery Sharjah service transports your car safely without any wheel contact with the road."
-        icon={TowerControl}
         image={service.image}
         titleAr={service.titleAr}
         arabicTagline="سطحة لنقل السيارات الشارقة | نقل سيارات الشارقة | نقل السيارات بالسطحة الشارقة | سطحة لنقل السيارات | سحب سيارات الحوادث الشارقة"

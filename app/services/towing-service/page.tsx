@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Truck } from "lucide-react"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
 
@@ -54,7 +53,6 @@ export default function TowingServicePage() {
         title="Towing Service"
         titleHighlight="Sharjah"
         intro="Looking for a tow truck near me in Sharjah? Our car towing service Sharjah drivers rely on covers every neighbourhood with safe, secure vehicle towing."
-        icon={Truck}
         image={service.image}
         titleAr={service.titleAr}
         arabicTagline="سحب السيارات في الشارقة | سطحة الشارقة | سطحة سيارات الشارقة | ونش سحب سيارات الشارقة | ونش سيارات الشارقة | سحب سيارة الشارقة"
