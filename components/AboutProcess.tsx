@@ -10,11 +10,11 @@ export default function AboutProcess() {
             <h2 className="text-3xl md:text-4xl font-black text-white">Performance Under Pressure</h2>
             <div className="h-1.5 w-20 bg-primary"></div>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Recovery work isn't always straightforward. Our operators are trained to handle busy Sharjah
+              Recovery work isn&apos;t always straightforward. Our operators are trained to handle busy Sharjah
               interchanges, tight residential streets, and everything in between with a calm, methodical approach.
             </p>
             <p className="text-slate-400 text-lg leading-relaxed">
-              We don't just move vehicles; we manage the scene safely. Every technician is fully trained in vehicle
+              We don&apos;t just move vehicles; we manage the scene safely. Every technician is fully trained in vehicle
               recovery protocols, ensuring your car reaches its destination without further complication.
             </p>
             <div className="grid grid-cols-2 gap-8 pt-6">
@@ -35,9 +35,9 @@ export default function AboutProcess() {
           <span className="material-symbols-outlined text-primary text-6xl">location_on</span>
           <h2 className="text-3xl font-black text-white">Dedicated to Sharjah</h2>
           <p className="text-slate-400 text-xl max-w-3xl mx-auto leading-relaxed">
-            We aren't a national call centre. We are a local team based right here in Sharjah. Our knowledge of the
-            emirate's roads, from Al Majaz Corniche to the outskirts of Al Suyoh, lets us reach you when others
-            can't.
+            We aren&apos;t a national call centre. We are a local team based right here in Sharjah. Our knowledge of the
+            emirate&apos;s roads, from Al Majaz Corniche to the outskirts of Al Suyoh, lets us reach you when others
+            can&apos;t.
           </p>
           <div className="flex flex-wrap justify-center gap-6 pt-4">
             <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-slate-300">Al Nahda Sharjah</span>

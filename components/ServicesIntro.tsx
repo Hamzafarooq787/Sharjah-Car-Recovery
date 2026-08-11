@@ -5,9 +5,9 @@ export default function ServicesIntro() {
         <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Local &amp; Reliable</span>
         <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">Serving Sharjah 24/7</h2>
         <p className="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto">
-          Based in Sharjah, we're proud to be the first call for local car recovery, towing and roadside
+          Based in Sharjah, we&apos;re proud to be the first call for local car recovery, towing and roadside
           assistance. Our fleet is positioned to provide rapid response across Al Majaz, Al Nahda, Al Taawun and
-          beyond. Whether it's 2 AM or midday traffic, our team is ready.
+          beyond. Whether it&apos;s 2 AM or midday traffic, our team is ready.
         </p>
         <div className="flex flex-wrap justify-center gap-8 pt-4">
           <div className="flex flex-col items-center">

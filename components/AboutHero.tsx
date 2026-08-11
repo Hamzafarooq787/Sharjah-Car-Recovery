@@ -13,7 +13,7 @@ export default function AboutHero() {
             About <span className="text-primary">Sharjah Car Recovery</span>
           </h1>
           <p className="text-slate-400 text-xl max-w-lg leading-relaxed">
-            Built on reliability and local knowledge, we are Sharjah's dependable choice for emergency roadside
+            Built on reliability and local knowledge, we are Sharjah&apos;s dependable choice for emergency roadside
             assistance and vehicle recovery.
           </p>
           <div className="pt-4">

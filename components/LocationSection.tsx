@@ -10,7 +10,7 @@ export default function LocationSection() {
         <h2 className="text-4xl font-black text-white mb-6 leading-tight">Serving Sharjah &amp; Every Surrounding Area</h2>
         <p className="text-slate-400 mb-8">
           From Al Majaz to Al Nahda, Al Taawun to Al Qasba, our car recovery Sharjah team is never far away. If
-          you're stuck anywhere in the emirate, we're already nearby.
+          you&apos;re stuck anywhere in the emirate, we&apos;re already nearby.
         </p>
         <ul className="grid grid-cols-2 gap-y-4">
           {featured.map((area, index) => (

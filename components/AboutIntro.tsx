@@ -12,13 +12,13 @@ export default function AboutIntro() {
           </h2>
           <div className="text-slate-400 text-xl leading-relaxed space-y-8 font-light">
             <p>
-              At Sharjah Car Recovery, we know that a breakdown is more than a mechanical problem — it's a
+              At Sharjah Car Recovery, we know that a breakdown is more than a mechanical problem — it&apos;s a
               disruption to your day. Based in Sharjah, our team combines local road knowledge with a genuine
               commitment to getting drivers moving again, quickly and safely.
             </p>
             <p>
-              Our commitment goes beyond simply towing a car. We pride ourselves on reliability, so whether you're
-              stranded near Al Majaz at midday or stuck on Al Ittihad Road late at night, you're met by a
+              Our commitment goes beyond simply towing a car. We pride ourselves on reliability, so whether you&apos;re
+              stranded near Al Majaz at midday or stuck on Al Ittihad Road late at night, you&apos;re met by a
               professional who puts your safety first.
             </p>
           </div>

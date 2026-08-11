@@ -52,7 +52,7 @@ export default function AreasPage() {
               <p className="text-slate-400 text-lg leading-relaxed">
                 From Al Majaz Corniche to the residential streets of Al Rahmaniya, Sharjah Car Recovery provides
                 fast car recovery, car towing service and breakdown recovery across every district of Sharjah. Our
-                drivers know the emirate's roads well, so whether you need emergency towing near a busy junction or
+                drivers know the emirate&apos;s roads well, so whether you need emergency towing near a busy junction or
                 accident recovery on a quiet street, help is always close by.
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function AreasPage() {
         <section className="bg-background-dark py-20 md:py-32 text-center border-t border-white/5 px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-primary font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] mb-4 text-xs md:text-sm">
-              Don't See Your Area?
+              Don&apos;t See Your Area?
             </p>
             <h2 className="text-white text-2xl md:text-3xl lg:text-5xl font-black mb-8 md:mb-12 px-2">
               Call Us — We Probably Still Cover It

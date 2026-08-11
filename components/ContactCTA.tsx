@@ -5,7 +5,7 @@ export default function ContactCTA() {
     <section className="bg-background-dark py-32 text-center">
       <div className="max-w-4xl mx-auto px-6">
         <p className="text-primary font-bold uppercase tracking-[0.2em] mb-4 text-sm">Immediate Assistance</p>
-        <h2 className="text-white text-3xl md:text-5xl font-black mb-12">Don't wait on the roadside. Call now.</h2>
+        <h2 className="text-white text-3xl md:text-5xl font-black mb-12">Don&apos;t wait on the roadside. Call now.</h2>
         <a
           className="inline-block bg-transparent text-primary hover:text-white transition-colors duration-300"
           href={`tel:${siteConfig.phoneTel}`}

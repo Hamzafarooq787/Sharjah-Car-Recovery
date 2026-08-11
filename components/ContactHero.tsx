@@ -15,7 +15,7 @@ export default function ContactHero() {
           Contact <span className="text-primary">Sharjah Car Recovery</span>
         </h1>
         <p className="text-slate-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-          If you need car recovery or towing assistance, contact us any time. We're ready to dispatch help across
+          If you need car recovery or towing assistance, contact us any time. We&apos;re ready to dispatch help across
           Sharjah immediately.
         </p>
       </div>
