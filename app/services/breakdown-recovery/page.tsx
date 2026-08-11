@@ -55,6 +55,7 @@ export default function BreakdownRecoveryPage() {
         titleHighlight="Recovery"
         intro="Vehicle broken down and won't start? Our emergency breakdown recovery Sharjah team responds fast, day or night, to get you and your car somewhere safe."
         icon={Wrench}
+        image={service.image}
         paragraphs={[
           "A breakdown always happens at the worst time. Sharjah Car Recovery provides rapid response breakdown recovery across Sharjah, with a calm, professional driver dispatched to your exact location.",
           "Our team handles all types of breakdowns, from engine failures to electrical faults, making sure your vehicle and everyone in it get to your chosen destination safely.",

@@ -17,6 +17,7 @@ export interface ServiceInfo {
   shortDescription: string
   metaTitle: string
   metaDescription: string
+  image?: string
 }
 
 export const services: ServiceInfo[] = [
@@ -27,6 +28,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Car Recovery Sharjah | 24/7 Car Recovery Service Near Me",
     metaDescription:
       "Need car recovery in Sharjah? Our team offers 24 hour car recovery Sharjah drivers trust, with fast dispatch and fair pricing across the emirate.",
+    image: "/images/car-recovery-loading.webp",
   },
   {
     slug: "towing-service",
@@ -35,6 +37,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Car Towing Service Sharjah | Tow Truck Near Me 24/7",
     metaDescription:
       "Looking for a tow truck in Sharjah? Our car towing service Sharjah drivers rely on covers every neighbourhood with fast, safe vehicle towing.",
+    image: "/images/towing-service-sunset.webp",
   },
   {
     slug: "roadside-assistance",
@@ -43,6 +46,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Roadside Assistance Sharjah | 24 Hour Emergency Help",
     metaDescription:
       "Stuck on the road? Get 24/7 roadside assistance Sharjah residents count on for flat tyres, fuel delivery and quick roadside fixes.",
+    image: "/images/roadside-assistance-fuel-delivery.webp",
   },
   {
     slug: "breakdown-recovery",
@@ -51,6 +55,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Breakdown Recovery Sharjah | Emergency Car Recovery Near Me",
     metaDescription:
       "Vehicle broken down? Our emergency breakdown recovery Sharjah team responds fast, any time of day, to get your car off the road safely.",
+    image: "/images/breakdown-recovery-night.webp",
   },
   {
     slug: "jumpstart",
@@ -67,6 +72,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Flatbed Recovery Sharjah | Flatbed Towing Service Near Me",
     metaDescription:
       "For accident recovery and low-clearance vehicles, our flatbed recovery Sharjah service transports your car safely without wheel contact.",
+    image: "/images/flatbed-recovery-handover.webp",
   },
 ]
 

@@ -1,8 +1,20 @@
-import { siteConfig } from "@/lib/site-config"
+import Image from "next/image"
 
 export default function ContactHero() {
   return (
     <section className="relative w-full min-h-[45vh] flex items-center overflow-hidden bg-navy-accent">
+      <Image
+        src="/images/roadside-fuel-closeup.webp"
+        alt="Sharjah Car Recovery roadside assistance"
+        fill
+        priority
+        className="object-cover opacity-30"
+        sizes="100vw"
+      />
+      <div
+        className="absolute inset-0 z-[1]"
+        style={{ background: "linear-gradient(to bottom, rgba(10, 12, 18, 0.75) 0%, rgba(10, 12, 18, 0.95) 100%)" }}
+      ></div>
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-20 lg:px-40 py-20 text-center md:text-left">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
           <span className="relative flex h-2 w-2">

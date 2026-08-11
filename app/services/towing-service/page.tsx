@@ -55,6 +55,7 @@ export default function TowingServicePage() {
         titleHighlight="Sharjah"
         intro="Looking for a tow truck near me in Sharjah? Our car towing service Sharjah drivers rely on covers every neighbourhood with safe, secure vehicle towing."
         icon={Truck}
+        image={service.image}
         paragraphs={[
           "From a single street to a longer trip across the emirate, our tow truck Sharjah fleet is equipped to move your vehicle without added stress or damage.",
           "Each car tow truck Sharjah driver is trained to secure vehicles correctly, so whether it's a compact car or a larger SUV, your vehicle travels safely from pickup to destination.",

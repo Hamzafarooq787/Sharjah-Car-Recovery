@@ -1,5 +1,6 @@
 import type { LucideIcon } from "lucide-react"
 import { Phone } from "lucide-react"
+import Image from "next/image"
 import { areas, siteConfig } from "@/lib/site-config"
 
 interface Feature {
@@ -15,6 +16,7 @@ interface ServicePageTemplateProps {
   icon: LucideIcon
   paragraphs: string[]
   features: Feature[]
+  image?: string
 }
 
 export default function ServicePageTemplate({
@@ -25,6 +27,7 @@ export default function ServicePageTemplate({
   icon: Icon,
   paragraphs,
   features,
+  image,
 }: ServicePageTemplateProps) {
   const coverageAreas = areas.slice(0, 4)
 
@@ -56,8 +59,19 @@ export default function ServicePageTemplate({
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 min-h-[350px] lg:min-h-0 relative bg-navy-accent flex items-center justify-center">
-          <Icon className="w-24 h-24 md:w-32 md:h-32 text-primary" strokeWidth={1.25} />
+        <div className="w-full lg:w-1/2 min-h-[350px] lg:min-h-0 relative bg-navy-accent flex items-center justify-center overflow-hidden">
+          {image ? (
+            <Image
+              src={image}
+              alt={`${title} ${titleHighlight} in Sharjah`}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          ) : (
+            <Icon className="w-24 h-24 md:w-32 md:h-32 text-primary" strokeWidth={1.25} />
+          )}
           <div className="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent lg:block hidden z-10"></div>
         </div>
       </section>
@@ -187,8 +201,19 @@ export default function ServicePageTemplate({
                 <span className="material-symbols-outlined text-base">arrow_forward</span>
               </a>
             </div>
-            <div className="relative w-full md:w-1/2 h-80 md:h-[450px] flex items-center justify-center bg-background-dark/40">
-              <Icon className="w-20 h-20 text-primary/40" strokeWidth={1} />
+            <div className="relative w-full md:w-1/2 h-80 md:h-[450px] flex items-center justify-center bg-background-dark/40 overflow-hidden">
+              {image ? (
+                <Image
+                  src={image}
+                  alt={`${title} ${titleHighlight} coverage across Sharjah`}
+                  fill
+                  loading="lazy"
+                  className="object-cover opacity-60"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              ) : (
+                <Icon className="w-20 h-20 text-primary/40" strokeWidth={1} />
+              )}
             </div>
           </div>
         </div>
