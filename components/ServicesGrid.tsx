@@ -19,6 +19,7 @@ export default function ServicesGrid() {
           <ServiceCard
             key={service.slug}
             title={service.title}
+            titleAr={service.titleAr}
             description={service.shortDescription}
             icon={serviceIcons[service.slug as keyof typeof serviceIcons]}
             href={`/services/${service.slug}`}

@@ -51,6 +51,7 @@ export default function CarRecoveryPage() {
         intro="Need car recovery in Sharjah right now? Our team handles every recovery call with speed and care, getting your vehicle off the road and to wherever you need it."
         icon={Car}
         image={service.image}
+        titleAr={service.titleAr}
         arabicTagline="إنقاذ السيارات في الشارقة | إنقاذ سيارات بالقرب مني"
         paragraphs={[
           "When your car can't be driven, you need a car recovery service you can rely on. Sharjah Car Recovery offers 24 hour car recovery Sharjah drivers trust, with clear communication from the first call to the final drop-off.",

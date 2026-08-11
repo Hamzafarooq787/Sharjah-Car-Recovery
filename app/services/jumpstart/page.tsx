@@ -51,6 +51,7 @@ export default function JumpstartPage() {
         intro="A flat battery shouldn't ruin your day. Our mobile jumpstart service reaches you fast anywhere in Sharjah, with cheap car recovery Sharjah rates and no long wait."
         icon={Zap}
         image={service.image}
+        titleAr={service.titleAr}
         arabicTagline="خدمة قطر السيارات الشارقة"
         paragraphs={[
           "If your car won't start because of a dead battery, our technicians come to you with heavy-duty jump-start equipment suited to all vehicle types.",

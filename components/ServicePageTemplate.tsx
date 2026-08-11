@@ -13,6 +13,7 @@ interface ServicePageTemplateProps {
   badge: string
   title: string
   titleHighlight: string
+  titleAr: string
   intro: string
   icon: LucideIcon
   paragraphs: string[]
@@ -25,6 +26,7 @@ export default function ServicePageTemplate({
   badge,
   title,
   titleHighlight,
+  titleAr,
   intro,
   icon: Icon,
   paragraphs,
@@ -50,6 +52,9 @@ export default function ServicePageTemplate({
             <h1 className="text-4xl md:text-6xl font-black text-white leading-[1.1] tracking-tight">
               {title} <span className="text-primary">{titleHighlight}</span>
             </h1>
+            <p dir="rtl" lang="ar" className="text-white text-2xl md:text-3xl font-black">
+              {titleAr}
+            </p>
             {arabicTagline && <ArabicTagline text={arabicTagline} />}
             <p className="text-slate-400 text-lg max-w-lg leading-relaxed">{intro}</p>
             <div className="pt-4">

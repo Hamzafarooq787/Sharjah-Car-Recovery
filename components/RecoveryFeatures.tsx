@@ -67,6 +67,15 @@ export default function RecoveryFeatures() {
                   >
                     {info.title}
                   </h3>
+                  <p
+                    dir="rtl"
+                    lang="ar"
+                    className={`${
+                      service.large ? "text-lg md:text-xl" : "text-sm md:text-base"
+                    } font-bold text-primary`}
+                  >
+                    {info.titleAr}
+                  </p>
                   {service.description && (
                     <p className="text-slate-300 text-sm mt-2 max-w-sm">{service.description}</p>
                   )}

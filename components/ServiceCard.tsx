@@ -4,13 +4,14 @@ import { ArrowRight, type LucideIcon } from "lucide-react"
 
 interface ServiceCardProps {
   title: string
+  titleAr: string
   description: string
   icon: LucideIcon
   href: string
   image?: string
 }
 
-export default function ServiceCard({ title, description, icon: Icon, href, image }: ServiceCardProps) {
+export default function ServiceCard({ title, titleAr, description, icon: Icon, href, image }: ServiceCardProps) {
   return (
     <Link
       href={href}
@@ -35,7 +36,12 @@ export default function ServiceCard({ title, description, icon: Icon, href, imag
         )}
       </div>
       <div className="p-8 space-y-3">
-        <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{title}</h3>
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{title}</h3>
+          <span dir="rtl" lang="ar" className="text-primary text-base font-bold">
+            {titleAr}
+          </span>
+        </div>
         <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
         <span className="inline-flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-wider group-hover:gap-3 transition-all">
           View service <ArrowRight className="w-4 h-4" />

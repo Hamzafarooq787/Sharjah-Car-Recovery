@@ -3,7 +3,7 @@ export default function ArabicTagline({ text, className = "" }: { text: string; 
     <p
       dir="rtl"
       lang="ar"
-      className={`text-primary/90 text-sm md:text-base font-semibold leading-relaxed ${className}`}
+      className={`text-primary text-xl md:text-2xl font-bold leading-relaxed ${className}`}
     >
       {text}
     </p>

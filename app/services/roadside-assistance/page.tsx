@@ -56,6 +56,7 @@ export default function RoadsideAssistancePage() {
         intro="Flat tyre, running out of fuel, or a minor fault that won't let you drive on? Our roadside assistance Sharjah team reaches you fast, wherever you are."
         icon={LifeBuoy}
         image={service.image}
+        titleAr={service.titleAr}
         arabicTagline="قطر السيارات الشارقة"
         paragraphs={[
           "Not every problem needs a full tow. Our roadside assistance covers tyre changes, fuel delivery, minor diagnostics and quick fixes that get you moving again without leaving the roadside.",
