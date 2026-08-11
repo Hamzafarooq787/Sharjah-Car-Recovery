@@ -43,8 +43,8 @@ export default function HeroSection() {
       </div>
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent overflow-hidden">
         <Image
-          src="/images/roadside-fuel-closeup.webp"
-          alt="Sharjah Car Recovery roadside assistance"
+          src="/images/breakdown-recovery-night.webp"
+          alt="Sharjah Car Recovery breakdown recovery tow truck"
           fill
           priority
           className="object-cover"

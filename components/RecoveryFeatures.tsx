@@ -78,6 +78,15 @@ export default function RecoveryFeatures() {
       </section>
 
       <section className="w-full py-24 relative overflow-hidden flex items-center justify-center text-center px-6 bg-navy-accent">
+        <Image
+          src="/images/flatbed-recovery-handover.webp"
+          alt="Sharjah Car Recovery professional operations"
+          fill
+          loading="lazy"
+          className="object-cover opacity-25"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-background-dark/70" />
         <div className="relative z-10 max-w-3xl space-y-8">
           <h2 className="text-4xl md:text-5xl font-black text-white">Trust In Professional Operations</h2>
           <p className="text-xl text-slate-300 leading-relaxed">
