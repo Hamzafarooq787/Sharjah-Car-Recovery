@@ -1,23 +1,6 @@
-import Link from "next/link"
 import Image from "next/image"
-import { siteConfig, services as serviceConfig } from "@/lib/site-config"
-
-const services = [
-  {
-    slug: "car-recovery",
-    description: "Fast, careful recovery for any car, any time of day.",
-    large: true,
-  },
-  { slug: "towing-service", large: false },
-  { slug: "roadside-assistance", large: false },
-  { slug: "breakdown-recovery", large: false },
-  { slug: "jumpstart", large: false },
-  {
-    slug: "flatbed-recovery",
-    description: "Safe transport for accident recovery and low-clearance cars.",
-    large: true,
-  },
-] as const
+import ServiceCard from "./ServiceCard"
+import { siteConfig, services } from "@/lib/site-config"
 
 export default function RecoveryFeatures() {
   return (
@@ -27,62 +10,17 @@ export default function RecoveryFeatures() {
           <h2 className="text-3xl font-black text-white mb-4">Professional Recovery Services in Sharjah</h2>
           <div className="h-1.5 w-24 bg-primary rounded-full"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {services.map((service) => {
-            const info = serviceConfig.find((s) => s.slug === service.slug)!
-            return (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                className={`${service.large ? "lg:col-span-2" : ""} group relative overflow-hidden rounded-xl bg-navy-accent border border-white/10 hover:border-primary/50 transition-colors ${
-                  service.large ? "aspect-[16/9] md:aspect-auto min-h-[240px]" : "aspect-square"
-                }`}
-              >
-                {info.image && (
-                  <Image
-                    src={info.image}
-                    alt={info.title}
-                    fill
-                    loading="lazy"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    sizes={
-                      service.large
-                        ? "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                        : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    }
-                  />
-                )}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "linear-gradient(0deg, rgba(10,12,18,0.95) 0%, rgba(10,12,18,0.55) 45%, rgba(10,12,18,0.05) 75%)",
-                  }}
-                />
-                <div className={`absolute bottom-0 left-0 right-0 ${service.large ? "p-7 md:p-8" : "p-5"}`}>
-                  <h3
-                    className={`${
-                      service.large ? "text-2xl md:text-3xl" : "text-lg md:text-xl"
-                    } font-black text-white leading-tight group-hover:text-primary transition-colors`}
-                  >
-                    {info.title}
-                  </h3>
-                  <p
-                    dir="rtl"
-                    lang="ar"
-                    className={`${
-                      service.large ? "text-lg md:text-xl" : "text-sm md:text-base"
-                    } font-bold text-primary`}
-                  >
-                    {info.titleAr}
-                  </p>
-                  {service.description && (
-                    <p className="text-slate-300 text-sm mt-2 max-w-sm">{service.description}</p>
-                  )}
-                </div>
-              </Link>
-            )
-          })}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
+            <ServiceCard
+              key={service.slug}
+              title={service.title}
+              titleAr={service.titleAr}
+              description={service.shortDescription}
+              href={`/services/${service.slug}`}
+              image={service.image}
+            />
+          ))}
         </div>
       </section>
 
