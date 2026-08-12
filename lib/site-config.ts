@@ -50,7 +50,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Roadside Assistance Sharjah | 24 Hour Emergency Help",
     metaDescription:
       "Stuck on the road? Get 24/7 roadside assistance Sharjah residents count on for flat tyres, fuel delivery and quick roadside fixes.",
-    image: "/images/roadside-assistance-fuel-delivery.webp",
+    image: "/images/roadside-assistance-warning-triangle.webp",
   },
   {
     slug: "breakdown-recovery",
