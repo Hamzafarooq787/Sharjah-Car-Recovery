@@ -60,7 +60,7 @@ export const services: ServiceInfo[] = [
     metaTitle: "Breakdown Recovery Sharjah | Emergency Car Recovery Near Me",
     metaDescription:
       "Vehicle broken down? Our emergency breakdown recovery Sharjah team responds fast, any time of day, to get your car off the road safely.",
-    image: "/images/roadside-fuel-closeup.webp",
+    image: "/images/breakdown-recovery-night.webp",
   },
   {
     slug: "jumpstart",

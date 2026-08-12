@@ -5,7 +5,7 @@ export default function ServicesHero() {
   return (
     <section className="relative w-full py-24 flex items-center justify-center overflow-hidden border-b border-white/5 bg-navy-accent">
       <Image
-        src="/images/breakdown-recovery-night.webp"
+        src="/images/car-recovery-loading.webp"
         alt="Sharjah Car Recovery services"
         fill
         priority
