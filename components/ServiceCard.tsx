@@ -16,7 +16,7 @@ export default function ServiceCard({ title, titleAr, description, href, image }
       href={href}
       className="group bg-surface-dark border border-white/10 rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300"
     >
-      <div className="h-40 relative overflow-hidden bg-navy-accent">
+      <div className="h-56 relative overflow-hidden bg-navy-accent">
         {image && (
           <Image
             src={image}
@@ -28,16 +28,16 @@ export default function ServiceCard({ title, titleAr, description, href, image }
           />
         )}
       </div>
-      <div className="p-8 space-y-3">
-        <div className="flex items-center justify-between gap-3">
-          <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{title}</h3>
-          <span dir="rtl" lang="ar" className="text-primary text-base font-bold">
-            {titleAr}
+      <div className="p-6 space-y-3">
+        <h3 className="text-xl font-bold text-white leading-snug group-hover:text-primary transition-colors">
+          {title}{" "}
+          <span dir="rtl" lang="ar" className="text-primary">
+            ({titleAr})
           </span>
-        </div>
+        </h3>
         <p className="text-slate-400 text-sm leading-relaxed">{description}</p>
-        <span className="inline-flex items-center gap-2 text-primary text-sm font-bold uppercase tracking-wider group-hover:gap-3 transition-all">
-          View service <ArrowRight className="w-4 h-4" />
+        <span className="inline-flex items-center gap-1.5 text-primary text-sm font-semibold group-hover:gap-2.5 transition-all">
+          Learn more <ArrowRight className="w-4 h-4" />
         </span>
       </div>
     </Link>
